@@ -42,6 +42,23 @@ p {
 .section-title span {
 	color: rgb(164, 23, 23);
 }
+.cta {
+	display: inline-block;
+	padding: 8px 8px;
+	/* color: rgb(164, 23, 23); */
+	color: white;
+	border: 2px solid rgb(164, 23, 23);
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	margin-top: 10px;
+	transition: 0.3s ease background-color;
+	transition-property: background-color, color;
+}
+.cta:hover {
+	color: white;
+	background-color: rgb(164, 23, 23);
+}
 #hero .hero {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -85,23 +102,6 @@ p {
 	background-color: black;
 	opacity: 0.7;
 	z-index: -1;
-}
-#hero .cta {
-	display: inline-block;
-	padding: 8px 8px;
-	/* color: rgb(164, 23, 23); */
-	color: white;
-	border: 2px solid rgb(164, 23, 23);
-	font-size: 1rem;
-	text-transform: uppercase;
-	letter-spacing: 0.1rem;
-	margin-top: 10px;
-	transition: 0.3s ease background-color;
-	transition-property: background-color, color;
-}
-#hero .cta:hover {
-	color: white;
-	background-color: rgb(164, 23, 23);
 }
 /* Hero Section Ends */
 
@@ -246,6 +246,48 @@ p {
 }
 #projects .projects-item:hover .projects-img img {
 	transform: scale(1.1);
+}
+/* About Section */
+#about .about {
+	flex-direction: column-reverse;
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 20px;
+}
+.col-right p {
+	color: black;
+	margin-bottom: 20px;
+}
+.about-img {
+	height: 500px;
+	width: 500px;
+}
+#about .col-right h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	margin-bottom: 10px;
+}
+#about .col-right .cta {
+	color: black;
+	margin-bottom: 50px;
+	padding: 10px 20px;
+	font-size: 2rem;
+}
+#about .col-left .about-img {
+	height: 500px;
+	width: 500px;
+	position: relative;
+}
+#about .col-left .about-img::after {
+	content: '';
+	position: absolute;
+	left: -33px;
+	top: 19px;
+	height: 98%;
+	width: 98%;
+	z-index: -1;
 }
 /* End Project Section */
 /* Keyframes (animation) */
