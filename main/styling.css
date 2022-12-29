@@ -289,7 +289,32 @@ p {
 	width: 98%;
 	z-index: -1;
 }
-/* End Project Section */
+/* Contact Section */
+#contact .contact {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	align-items: center;
+}
+#contact .contact-items {
+	width: 100%;
+	padding: 20px;
+}
+#contact .contact-item {
+	width: 80%;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0px 0px 18px 0 #4b3b3b2c;
+}
+/* End Contact Section */
+
 /* Keyframes (animation) */
 @keyframes text_reveal_box {
 	50% {
